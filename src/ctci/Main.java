@@ -18,6 +18,8 @@ public class Main {
 		tree.add(12);
 		tree.add(12);
 		tree.traverse(1);
+		System.out.println(tree.find(33)); //false
+		System.out.println(tree.find(17)); //true
 	}
 	
 	

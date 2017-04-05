@@ -43,6 +43,36 @@ public class Tree {
 			}
 		}
 	}
+	
+	public boolean find(int data){
+		Node currentNode = this.rootNode;
+		Node parentNode = currentNode;
+		if(this.rootNode == null){
+			return false;
+		} else{
+			parentNode = currentNode;
+			while(true){
+				if(currentNode.getData() > data){ 
+				//Data being inserted is smaller than the current nodes data
+					currentNode = parentNode.getLeft();
+					if(currentNode == null){
+						return false;
+					} else if(currentNode.getData() == data){
+						return true;
+					}
+				} else if(currentNode.getData() < data){
+				//Data being inserted is greater than the current nodes data
+					currentNode = parentNode.getRight();
+					if(currentNode == null){
+						return false;
+					} else if(currentNode.getData() == data){
+						return true;
+					}
+				}
+				parentNode = currentNode;
+			}
+		}
+	}
 
 	public void traverse(int type){
 		switch(type){
