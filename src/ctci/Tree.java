@@ -44,11 +44,11 @@ public class Tree {
 		}
 	}
 	
-	public boolean find(int data){
+	public Node find(int data){
 		Node currentNode = this.rootNode;
 		Node parentNode = currentNode;
 		if(this.rootNode == null){
-			return false;
+			return null;
 		} else{
 			parentNode = currentNode;
 			while(true){
@@ -56,21 +56,34 @@ public class Tree {
 				//Data being inserted is smaller than the current nodes data
 					currentNode = parentNode.getLeft();
 					if(currentNode == null){
-						return false;
+						return null;
 					} else if(currentNode.getData() == data){
-						return true;
+						return currentNode;
 					}
 				} else if(currentNode.getData() < data){
 				//Data being inserted is greater than the current nodes data
 					currentNode = parentNode.getRight();
 					if(currentNode == null){
-						return false;
+						return null;
 					} else if(currentNode.getData() == data){
-						return true;
+						return currentNode;
 					}
 				}
 				parentNode = currentNode;
 			}
+		}
+	}
+	
+	public boolean delete(int data){
+		Node node = find(data);
+		if(node == null){
+			return false;
+		} else{
+			if()
+			
+			
+			
+			return true;
 		}
 	}
 

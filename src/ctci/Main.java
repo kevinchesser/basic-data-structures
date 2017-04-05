@@ -18,8 +18,16 @@ public class Main {
 		tree.add(12);
 		tree.add(12);
 		tree.traverse(1);
-		System.out.println(tree.find(33)); //false
-		System.out.println(tree.find(17)); //true
+		if(tree.find(33) != null){
+			System.out.println("Found 33");
+		} else{
+			System.out.println("Didn't find 33");
+		}
+		if(tree.find(17) != null){
+			System.out.println("Found 17");
+		} else{
+			System.out.println("Didn't find 17");
+		}
 	}
 	
 	
