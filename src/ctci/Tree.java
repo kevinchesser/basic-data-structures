@@ -80,8 +80,11 @@ public class Tree {
 			return false;
 		} else{
 			if()
-			
-			
+		//Possible check depths of child subtrees and shift up the deeper one?
+		//Check left child exists
+				//move entire subtree up
+		//Check right child exists
+				//move subtree up
 			
 			return true;
 		}
