@@ -24,7 +24,6 @@ public class Main {
 		tree.add(12);
 		tree.add(10);
 		tree.add(14);
-		tree.add(16);
 		tree.traverse(2);
 		/*if(tree.find(33) != null){
 			System.out.println("Found 33");
@@ -36,7 +35,7 @@ public class Main {
 		} else{
 			System.out.println("Didn't find 17");
 		}*/
-		boolean deleted = tree.delete(14);
+		boolean deleted = tree.delete(9);
 		System.out.println(deleted);
 		tree.traverse(2);
 	}

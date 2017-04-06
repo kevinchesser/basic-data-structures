@@ -115,7 +115,7 @@ public class Tree {
 						parent.setLeft(node.getRight());
 						return true;
 					}
-				} else{ //Node being delted is the right child of its parent
+				} else{ //Node being deleted is the right child of its parent
 					if(childLeft){
 						parent.setRight(node.getLeft());
 						return true;
@@ -127,6 +127,21 @@ public class Tree {
 			}//End node has one child
 			if(node.getLeft() != null && node.getRight() != null){
 				Node successor = getInOrderSuccessor(node);
+				node.setData(successor.getData());
+				node.setCount(successor.getCount());
+				Node successorParent = successor.getParent();
+				boolean parentLeft = false;
+				if(successorParent.getLeft() == successor){
+					parentLeft = true;
+				}
+				if(parentLeft){ 
+					successorParent.setLeft(null);
+					return true;
+				} else{ 
+					successorParent.setRight(null);
+					return true;
+				}
+				
 			}
 			return false;
 		}
