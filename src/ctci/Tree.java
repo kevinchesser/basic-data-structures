@@ -113,6 +113,7 @@ public class Tree {
 						return true;
 					} else{
 						parent.setLeft(node.getRight());
+						return true;
 					}
 				} else{ //Node being delted is the right child of its parent
 					if(childLeft){
@@ -120,6 +121,7 @@ public class Tree {
 						return true;
 					} else{
 						parent.setRight(node.getRight());
+						return true;
 					}
 				}
 			}//End node has one child

@@ -24,8 +24,9 @@ public class Main {
 		tree.add(12);
 		tree.add(10);
 		tree.add(14);
+		tree.add(16);
 		tree.traverse(2);
-		if(tree.find(33) != null){
+		/*if(tree.find(33) != null){
 			System.out.println("Found 33");
 		} else{
 			System.out.println("Didn't find 33");
@@ -34,10 +35,10 @@ public class Main {
 			System.out.println("Found 17");
 		} else{
 			System.out.println("Didn't find 17");
-		}
-		Node n = tree.find(12);
-		n = tree.getInOrderSuccessor(n);
-		System.out.println(n.getData());
+		}*/
+		boolean deleted = tree.delete(14);
+		System.out.println(deleted);
+		tree.traverse(2);
 	}
 	
 	
