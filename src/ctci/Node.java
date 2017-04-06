@@ -4,12 +4,14 @@ public class Node {
 
 	private Node left;
 	private Node right;
+	private Node parent;
 	private int data;
 	private int count;
 	
-	public Node(Node left, Node right, int data, int count){
+	public Node(Node left, Node right, Node parent, int data, int count){
 		this.left = left;
 		this.right = right;
+		this.parent = parent;
 		this.data = data;
 		this.count = count;
 	}
@@ -28,6 +30,14 @@ public class Node {
 
 	public void setRight(Node right){
 		this.right = right;
+	}
+	
+	public Node getParent(){
+		return this.parent;
+	}
+	
+	public void setParent(Node parent){
+		this.parent = parent;
 	}
 
 	public int getData(){
