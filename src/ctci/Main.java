@@ -46,13 +46,9 @@ public class Main {
 	
 	
 	public static void sortTest(){
-		Random r = new Random();
-		int[] arr = new int[1000];
-		for(int i = 0; i < arr.length; i++){
-			arr[i] = r.nextInt(1000);
-		}
-		Sort sort = new Sort(arr);
-		System.out.println(Arrays.toString(sort.bubbleSort()));
+		Sort sort = new Sort();
+		System.out.println(Arrays.toString(sort.bubbleSort(sort.randomArray())));
+		System.out.println(Arrays.toString(sort.selectionSort(sort.randomArray())));
 	}
 	
 	
