@@ -33,11 +33,10 @@ public class LinkedList {
 	
 	public void traverse(){
 		NodeLL node = this.head; 
-		while(node.getNext() != null){
+		while(node != null){
 			System.out.println(node.getData());
 			node = node.getNext();
 		}
-		System.out.println(node.getData());
 	}
 	
 	public void reverse(){
@@ -51,6 +50,13 @@ public class LinkedList {
 			currentNode = nextNode;
 		}
 		this.head = previousNode;
+	}
+	
+	public void delete(int data){
+		NodeLL node = this.head;
+		while(node != null){
+			
+		}
 	}
 	
 	public NodeLL getHead(){
