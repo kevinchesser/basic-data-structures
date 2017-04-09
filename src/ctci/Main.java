@@ -57,8 +57,10 @@ public class Main {
 		linkedList.addHead(3);
 		linkedList.addHead(6);
 		linkedList.addTail(10);
-		linkedList.traverse();
+		//linkedList.traverse();
 		linkedList.reverse();
+		linkedList.traverse();
+		linkedList.delete(10);
 		linkedList.traverse();
 	}
 	
