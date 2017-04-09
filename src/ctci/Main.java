@@ -7,7 +7,8 @@ public class Main {
 
 	public static void main(String[] args){
 		//treeTest();
-		sortTest();
+		//sortTest();
+		linkedListTest();
 	}
 	
 	public static void treeTest(){
@@ -49,6 +50,16 @@ public class Main {
 		Sort sort = new Sort();
 		System.out.println(Arrays.toString(sort.bubbleSort(sort.randomArray())));
 		System.out.println(Arrays.toString(sort.selectionSort(sort.randomArray())));
+	}
+	
+	public static void linkedListTest(){
+		LinkedList linkedList = new LinkedList();
+		linkedList.addHead(3);
+		linkedList.addHead(6);
+		linkedList.addTail(10);
+		linkedList.traverse();
+		linkedList.reverse();
+		linkedList.traverse();
 	}
 	
 	
