@@ -19,6 +19,18 @@ public class Stack {
 		}
 	}
 	
+	public void pop(){
+		if(this.top == null){
+			return;
+		} else if(this.top.getPrev() == null){
+			this.top = null;
+			return;
+		} else{
+			this.top = this.top.getPrev();
+			this.top.setNext(null);
+		}
+	}
+	
 	public void traverse(){
 		NodeS node = this.top;
 		while(node != null){

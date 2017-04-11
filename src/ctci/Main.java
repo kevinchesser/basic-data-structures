@@ -93,5 +93,7 @@ public class Main {
 		stack.push(6);
 		stack.push(3);
 		stack.traverse();
+		stack.pop();
+		stack.traverse();
 	}
 }
