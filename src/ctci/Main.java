@@ -83,6 +83,15 @@ public class Main {
 	
 	public static void stackTest(){
 		Stack stack = new Stack();
-		
+		stack.push(6);
+		stack.push(19);
+		stack.push(7);
+		stack.push(62);
+		stack.push(88);
+		stack.push(64);
+		stack.push(5);
+		stack.push(6);
+		stack.push(3);
+		stack.traverse();
 	}
 }

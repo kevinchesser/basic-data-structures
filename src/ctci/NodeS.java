@@ -21,7 +21,7 @@ public class NodeS {
 	}
 	
 	public void setPrev(NodeS prev){
-		
+		this.prev = prev;
 	}
 	
 	public int getData(){
