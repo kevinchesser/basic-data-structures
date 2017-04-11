@@ -17,6 +17,7 @@ public class Queue {
 			this.last = node;
 		} else{
 			this.last.setNext(node);
+			this.last = node;
 		}
 		
 	}

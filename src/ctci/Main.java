@@ -8,7 +8,9 @@ public class Main {
 	public static void main(String[] args){
 		//treeTest();
 		//sortTest();
-		linkedListTest();
+		//linkedListTest();
+		//queueTest();
+		stackTest();
 	}
 	
 	public static void treeTest(){
@@ -64,5 +66,23 @@ public class Main {
 		linkedList.traverse();
 	}
 	
+	public static void queueTest(){
+		Queue queue = new Queue();
+		queue.enqueue(8);
+		queue.enqueue(5);
+		queue.enqueue(19);
+		queue.traverse();
+		queue.dequeue();
+		queue.traverse();
+		queue.dequeue();
+		queue.dequeue();
+		queue.traverse();
+		queue.enqueue(72);
+		queue.traverse();
+	}
 	
+	public static void stackTest(){
+		Stack stack = new Stack();
+		
+	}
 }
